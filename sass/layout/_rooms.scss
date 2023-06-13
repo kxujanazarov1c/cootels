@@ -1,0 +1,52 @@
+.rooms {
+    @include padding;
+
+    &__info {
+        text-align: center;
+        padding-bottom: 8.8rem;
+
+        h2 {
+            @include font_1(3.6rem, 600, 5.7rem);
+        }
+
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary;
+        }
+
+        button {
+            @include btn;
+            @include font_2;
+        }
+    }
+    &__cards {
+        @include flex;
+        gap: 2.4rem;
+    }
+    &__card {
+        width: 33%;
+
+        h4 {
+            @include font_1(2.4rem, 600, 3.6rem);
+            font-family: montserrat;
+        }
+
+        p {
+            @include font_1(1.8rem, 400, 2.7rem);
+            color: $secondary;
+            padding-top: 1.6rem
+        }
+
+       
+    }
+    &__btn {
+        @include flex;
+        @include font_1(1.8rem, 400, 2.7rem);
+        padding-top: 3.2rem;
+        gap: 1.3rem;
+        color: $arrow-txt-color;
+    }
+
+
+}

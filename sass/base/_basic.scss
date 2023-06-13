@@ -1,0 +1,42 @@
+// Fonts
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+
+// BASIC STYLE
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}

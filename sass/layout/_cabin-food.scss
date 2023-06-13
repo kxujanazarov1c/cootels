@@ -1,0 +1,51 @@
+.cabin-food{
+    @include padding;
+}
+// CABIN *********
+.cabin {
+    @include flex;
+
+    &__info {
+        width: 60%;
+
+        h2 {
+            @include font_1(3.6rem, 600, 5.7rem);
+        }
+
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary;
+        }
+
+    }
+
+    &__img {
+        width: 40%;
+    }
+}
+// FOOD *********
+.food {
+    @include flex;
+    padding-top: 3.2rem;
+    &__img {
+        width: 40%;
+    }
+
+    &__info {
+        width: 60%;
+
+        h2 {
+            @include font_1(3.6rem, 600, 5.7rem);
+        }
+
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary;
+        }
+
+    }
+
+   
+}

@@ -1,0 +1,49 @@
+.footer {
+    background-color: $footer-bg;
+    @include padding;
+    .container{
+        @include flex;
+        align-items: start;
+    }
+    &__left-txt {
+        width: 50%;
+        h2 {
+            @include font_1(3.2rem , 700 , 3.9rem);
+            color: $third_color;
+        }
+
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary;
+        }
+        
+    }
+    &__logo{
+        @include flex;
+        gap: 2.4rem;
+    }
+    &__right-txt{
+        width: 50%;
+        @include flex;
+        align-items: start;
+        gap:10rem;
+      
+        
+    }
+    &__card{
+        width: 33%;
+        h5{
+            @include font_1(1.6rem , 700 , 1.9rem);
+            color: $third_color;
+            padding-bottom: 2.4rem;
+        }
+        p{
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary;
+        }
+       }
+
+
+}

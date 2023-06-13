@@ -1,0 +1,31 @@
+@mixin flex($jc: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: $jc;
+}
+
+@mixin padding {
+  padding: 8rem 0;
+}
+
+@mixin btn {
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.4rem;
+  background-color: $btn-bg;
+  color: $third_color;
+}
+
+@mixin font_1($fs: 1.8rem, $fw: 400, $lh: 2.7rem) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin font_2($fs: 1.6rem, $fw: 500, $lh: 1.9rem) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+@mixin pragraph_m {
+  margin: 2.4rem 0 3.2rem 0;
+}

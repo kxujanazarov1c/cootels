@@ -1,0 +1,42 @@
+.testimonial {
+    text-align: center;
+    @include padding;
+
+
+    h2 {
+        @include font_1(3.6rem, 600, 5.7rem);
+    }
+    img{
+        padding: 6.5rem 0 4.4rem 0;
+    }
+
+    p {
+        @include pragraph_m;
+        @include font_1;
+        color: $secondary;
+    }
+    h4{
+        @include font_1(2rem , 500 , 3rem);
+        padding-bottom: 2.4rem;
+    }
+    &__btn{
+        @include flex;
+        justify-content: center;
+        gap: 1.2rem;
+        li{
+            width: 2rem;
+            height: 2rem;
+            background-color: $acc_up_bg;
+            border-radius: 5rem;
+            border: 0.4rem solid $third_color;
+            cursor: pointer;
+        }
+        li:hover {
+            border: 0.4rem solid $acc_up_bg;
+        }
+        li:nth-child(2){
+            border: 0.4rem solid $acc_up_bg;
+        }
+    }
+
+}

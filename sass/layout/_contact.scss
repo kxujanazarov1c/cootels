@@ -1,0 +1,102 @@
+
+.contact {
+    @include flex;
+    @include padding;
+    height:70rem;
+
+    &__info {
+        width: 50%;
+       
+        span {
+            @include font_1(1.6rem, 500, 2.4rem);
+            color: $arrow-txt-color;
+            padding: 1.2rem;
+        }
+
+        h2 {
+            @include font_1(4.8rem, 600, 7.2rem);
+        }
+
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary;
+        }
+    }
+    &__btn {
+        button {
+            @include btn;
+            @include font_2;
+        }
+        span{
+            @include font_1(1.6rem , 500 , 1.9rem);
+            color: $btn-bg;
+        }
+    }
+    .acardion{
+        width: 50%;
+        @include flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+    &__acardion{
+        border-radius: 0.4rem;
+        box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.259);
+        input{
+            display: none;
+        }
+        label{
+            @include flex;  
+            padding: 3rem 3.6rem;
+            cursor: pointer;
+            color: $arrow-txt-color;
+            position: relative;
+
+
+            span{
+                @include font_1(2.4rem , 600 , 3.6rem);
+            }
+          
+        }
+    
+        .acardion__content{
+            max-height: 0;
+            overflow: hidden;
+            transition: all .3s ;
+            position: relative;
+            
+            p{
+                @include font_1(1.8rem , 400 , 2.7rem);
+                padding: 1rem;
+                color: $primary_color;
+            }
+          
+        }
+        .acardion_arrow_down {
+            @include flex;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: $acc_down_bg;  
+            border-radius: 5rem;
+            position: absolute;
+            right: 5rem;
+            z-index: 1;
+        }
+        .acardion_arrow_up{
+            @include flex;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: $acc_up_bg;  
+            border-radius: 5rem;
+            position: absolute;
+            right: 5rem;
+            z-index: 0;
+        }
+        input:checked ~ .acardion__content{
+            max-height: 7.5rem;
+        }
+        
+    }
+}
